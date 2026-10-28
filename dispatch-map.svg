@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 760" role="img" aria-label="폭풍전기 출동 가능 지역 지도">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#20d7ff"/>
+    <stop offset="55%" stop-color="#0a9cff"/>
+    <stop offset="100%" stop-color="#0a67ff"/>
+  </linearGradient>
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="8" result="b"/>
+    <feColorMatrix in="b" type="matrix"
+      values="0 0 0 0 0.04
+              0 0 0 0 0.55
+              0 0 0 0 1
+              0 0 0 .55 0" result="c"/>
+    <feMerge><feMergeNode in="c"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <style>
+    .r{fill:url(#g);stroke:#a9efff;stroke-width:2.2;filter:url(#glow)}
+    .t{fill:#fff;font:700 22px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;text-anchor:middle;dominant-baseline:middle}
+    .s{fill:#b8c0ca;font:600 14px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;text-anchor:middle}
+  </style>
+</defs>
+
+<rect width="920" height="760" rx="36" fill="#09090a"/>
+
+<!-- northern corridor -->
+<path class="r" d="M565 55 L638 38 L697 68 L705 132 L678 168 L610 164 L570 132 Z"/>
+<text class="t" x="636" y="105">동두천</text>
+
+<path class="r" d="M505 150 L575 132 L632 166 L646 230 L610 270 L536 266 L493 225 Z"/>
+<text class="t" x="566" y="204">양주</text>
+
+<path class="r" d="M487 268 L546 251 L590 280 L592 334 L557 365 L502 354 L472 314 Z"/>
+<text class="t" x="531" y="308">의정부</text>
+
+<!-- northwest -->
+<path class="r" d="M235 210 L330 184 L402 224 L405 302 L364 350 L276 338 L224 284 Z"/>
+<text class="t" x="316" y="265">일산</text>
+<text class="s" x="316" y="293">(고양)</text>
+
+<path class="r" d="M112 300 L211 274 L264 315 L253 386 L190 426 L111 402 L78 352 Z"/>
+<text class="t" x="168" y="350">김포</text>
+
+<!-- west/center -->
+<path class="r" d="M48 438 L136 411 L184 446 L182 516 L129 550 L57 528 L28 478 Z"/>
+<text class="t" x="105" y="480">인천</text>
+
+<path class="r" d="M188 428 L249 414 L287 444 L279 495 L240 518 L193 497 L173 461 Z"/>
+<text class="t" x="230" y="463">부천</text>
+
+<path class="r" d="M296 350 L439 321 L533 360 L549 448 L488 512 L360 508 L285 452 Z"/>
+<text class="t" x="416" y="416">서울</text>
+
+<path class="r" d="M276 502 L329 490 L358 518 L350 557 L316 579 L278 561 L262 530 Z"/>
+<text class="t" x="311" y="535">광명</text>
+
+<!-- southwest -->
+<path class="r" d="M135 542 L236 520 L289 565 L277 644 L214 690 L132 666 L96 604 Z"/>
+<text class="t" x="193" y="606">시흥</text>
+
+<!-- subtle title -->
+<text x="458" y="724" fill="#5f6772" font-size="15" font-weight="600"
+      text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans KR',sans-serif">
+  서울 · 인천 · 부천 · 시흥 · 광명 · 김포 · 일산 · 의정부 · 동두천 · 양주
+</text>
+</svg>
