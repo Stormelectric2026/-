@@ -1,0 +1,127 @@
+{
+  "all_passed": true,
+  "checks": {
+    "brand_present": true,
+    "phone_display_present": true,
+    "phone_tel_present": true,
+    "electrical_repair_text_present": true,
+    "hero_image_referenced": true,
+    "dispatch_map_referenced": true,
+    "no_map_caption": true,
+    "year_round_present": true,
+    "reservation_copy_present": true,
+    "breaker_combined": true,
+    "burning_smell_present": true,
+    "scorch_melt_present": true,
+    "noise_present": true,
+    "service_electric": true,
+    "service_outlet": true,
+    "service_light_switch": true,
+    "region_서울": true,
+    "region_인천": true,
+    "region_부천": true,
+    "region_시흥": true,
+    "region_광명": true,
+    "region_김포": true,
+    "region_일산": true,
+    "region_의정부": true,
+    "region_동두천": true,
+    "region_양주": true,
+    "map_bucheon_nonempty": true,
+    "map_siheung_nonempty": true,
+    "hero_asset_exists": true,
+    "map_asset_exists": true
+  },
+  "map_masks": {
+    "동두천": {
+      "pixels": 908,
+      "bbox": [
+        292,
+        124,
+        332,
+        164
+      ]
+    },
+    "양주": {
+      "pixels": 3181,
+      "bbox": [
+        261,
+        139,
+        323,
+        238
+      ]
+    },
+    "의정부": {
+      "pixels": 766,
+      "bbox": [
+        290,
+        200,
+        330,
+        228
+      ]
+    },
+    "일산(고양)": {
+      "pixels": 2507,
+      "bbox": [
+        190,
+        213,
+        282,
+        274
+      ]
+    },
+    "김포": {
+      "pixels": 2732,
+      "bbox": [
+        144,
+        197,
+        224,
+        270
+      ]
+    },
+    "서울": {
+      "pixels": 6964,
+      "bbox": [
+        219,
+        229,
+        341,
+        331
+      ]
+    },
+    "인천": {
+      "pixels": 3938,
+      "bbox": [
+        160,
+        253,
+        221,
+        365
+      ]
+    },
+    "부천": {
+      "pixels": 354,
+      "bbox": [
+        215,
+        290,
+        234,
+        319
+      ]
+    },
+    "광명": {
+      "pixels": 174,
+      "bbox": [
+        238,
+        313,
+        254,
+        341
+      ]
+    },
+    "시흥": {
+      "pixels": 1358,
+      "bbox": [
+        189,
+        320,
+        249,
+        377
+      ]
+    }
+  }
+}
