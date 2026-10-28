@@ -3,89 +3,294 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>폭풍전기 | 차단기·콘센트·조명·누전 전기수리</title>
-<meta name="description" content="차단기 내려감, 콘센트 고장, 조명 불량, 누전·합선 등 생활 전기 문제를 빠르게 점검합니다.">
+<title>폭풍전기 | 전기수리·콘센트교체·누전점검·차단기 문제</title>
+<meta name="description" content="전기수리, 콘센트교체, 누전점검, 차단기 내려감·떨어짐·안올라감, 스위치, LED조명, 220V 기준 경미한 내부배선 전기공사 상담. 서울·인천·부천·시흥·광명·김포·일산·의정부·동두천·양주 출동.">
+<meta name="keywords" content="전기수리, 콘센트교체, 누전점검, 차단기내려감, 차단기떨어짐, 차단기안올라감, 스위치교체, LED조명, 내부배선전기공사, 서울전기수리, 인천전기수리, 부천전기수리">
+<meta property="og:title" content="폭풍전기 | 생활 전기 문제 빠른 점검">
+<meta property="og:description" content="전기수리 · 콘센트교체 · 누전점검 · 차단기 문제 · 스위치 · LED조명">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#000000">
 <style>
-:root{--bg:#08111f;--card:#101b2d;--line:#24344f;--text:#f8fafc;--muted:#aab7c8;--accent:#f5c84c}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;background:linear-gradient(180deg,#08111f,#0c1727);color:var(--text);line-height:1.65}
-a{color:inherit;text-decoration:none}.wrap{max-width:1080px;margin:auto;padding:0 22px}
-header{position:sticky;top:0;background:rgba(8,17,31,.9);backdrop-filter:blur(12px);border-bottom:1px solid #ffffff14;z-index:9}
-nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-size:22px;font-weight:900}.brand span{color:var(--accent)}
-nav .links{display:flex;gap:18px;color:var(--muted);font-size:14px}.call{background:var(--accent);color:#171717;padding:10px 14px;border-radius:12px;font-weight:900}
-.hero{padding:76px 0 46px}.badge{display:inline-block;border:1px solid var(--line);padding:7px 11px;border-radius:999px;color:#d7e5f8;margin-bottom:18px}
-h1{font-size:clamp(42px,7vw,76px);line-height:1.05;letter-spacing:-.055em;margin:0 0 20px}h1 em{font-style:normal;color:var(--accent)}
-.hero p{max-width:700px;color:var(--muted);font-size:19px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-.btn{display:inline-flex;min-height:52px;align-items:center;justify-content:center;padding:0 20px;border-radius:14px;border:1px solid var(--line);font-weight:900}
-.btn.primary{background:var(--accent);color:#171717;border-color:transparent}
-section{padding:54px 0}.head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:22px}.head h2{font-size:clamp(28px,4vw,42px);margin:0;letter-spacing:-.04em}.head p{margin:0;color:var(--muted);max-width:520px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:var(--card);border:1px solid #ffffff14;border-radius:20px;padding:22px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted)}
-.areas{display:flex;flex-wrap:wrap;gap:9px}.pill{background:#0f1d31;border:1px solid var(--line);padding:9px 13px;border-radius:999px}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step b{display:inline-grid;place-items:center;background:var(--accent);color:#171717;width:36px;height:36px;border-radius:11px;margin-bottom:12px}
-.faq details{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:0 17px;margin:10px 0}.faq summary{cursor:pointer;font-weight:800;padding:16px 0}.faq p{color:var(--muted);margin:0 0 17px}
-.cta{background:linear-gradient(135deg,#f5c84c22,#7dd3fc12);border:1px solid #f5c84c44;border-radius:24px;padding:32px}.cta h2{font-size:clamp(30px,4vw,46px);margin:0 0 10px}
-footer{padding:34px 0 90px;color:#8494a9}.sticky{display:none}
-@media(max-width:800px){.grid,.steps{grid-template-columns:1fr 1fr}.links{display:none!important}}
-@media(max-width:560px){.grid,.steps{grid-template-columns:1fr}.hero{padding-top:50px}h1{font-size:48px}.actions .btn{width:100%}.head{flex-direction:column;align-items:flex-start}.sticky{display:flex;position:fixed;left:14px;right:14px;bottom:14px;z-index:20;min-height:58px;align-items:center;justify-content:center;background:var(--accent);color:#171717;border-radius:16px;font-weight:950;box-shadow:0 12px 30px #0008}}
+:root{
+  --bg:#000;
+  --panel:#111113;
+  --panel2:#17171a;
+  --text:#f5f5f7;
+  --muted:#8e8e93;
+  --line:#2a2a2d;
+  --blue:#0a84ff;
+  --cyan:#64d2ff;
+  --mint:#66f0d1;
+  --green:#8cff76;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+  letter-spacing:-.02em;
+}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+nav{
+  position:sticky;top:0;z-index:50;
+  height:52px;background:rgba(0,0,0,.78);backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(255,255,255,.06)
+}
+.nav-inner{height:100%;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;font-size:17px}
+.navlinks{display:flex;gap:26px;font-size:13px;color:#c8c8cc}
+.nav-cta{padding:8px 14px;border-radius:999px;background:var(--blue);font-size:13px;font-weight:800}
+.promo{
+  background:#1d1d1f;color:#fff;text-align:center;
+  padding:14px 18px;font-size:13px
+}
+.hero{padding:84px 0 70px;min-height:860px;display:flex;align-items:center}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:36px}
+.eyebrow{font-weight:800;font-size:24px;margin-bottom:12px}
+.hero h1{
+  margin:0;font-size:clamp(58px,8vw,108px);line-height:.96;letter-spacing:-.075em;
+  max-width:1040px
+}
+.gradient-text{
+  background:linear-gradient(90deg,#c7fff5 0%,#6ad8ff 38%,#3b83ff 72%,#315d8d 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent
+}
+.hero-copy{max-width:720px;color:#a1a1a6;font-size:20px;line-height:1.55;margin-top:26px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;border-radius:999px;
+  border:1px solid #3a3a3c;font-weight:800
+}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:white}
+.btn.dark{background:#1c1c1e}
+.hero-visual{
+  position:relative;height:420px;border-radius:34px;overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 45%,rgba(0,174,255,.24),transparent 23%),
+    radial-gradient(circle at 35% 55%,rgba(0,255,219,.15),transparent 30%),
+    linear-gradient(180deg,#030303,#080b10 65%,#050505);
+  border:1px solid rgba(255,255,255,.06);
+  box-shadow:0 40px 100px rgba(0,115,255,.10)
+}
+.arc{
+  position:absolute;left:8%;right:8%;top:46%;height:5px;
+  background:linear-gradient(90deg,transparent,#7ff7ff,#12a7ff,#7ff7ff,transparent);
+  box-shadow:0 0 12px #36d8ff,0 0 40px #0a84ff,0 0 90px rgba(10,132,255,.8);
+  transform:skewY(-5deg) rotate(-4deg);border-radius:999px
+}
+.arc:before,.arc:after{
+  content:"";position:absolute;height:3px;border-radius:999px;background:#9bfaff;
+  box-shadow:0 0 20px #55eaff
+}
+.arc:before{width:34%;left:12%;top:-70px;transform:rotate(22deg)}
+.arc:after{width:29%;right:16%;top:72px;transform:rotate(-28deg)}
+.visual-label{
+  position:absolute;left:7%;bottom:8%;font-size:clamp(32px,5vw,66px);font-weight:900;letter-spacing:-.06em
+}
+.visual-label small{display:block;font-size:16px;color:#9a9aa0;letter-spacing:-.02em;margin-bottom:8px}
+section{padding:110px 0}
+.section-title{font-size:clamp(42px,6vw,78px);line-height:1.02;letter-spacing:-.06em;margin:0}
+.section-sub{color:#8e8e93;font-size:19px;max-width:700px;margin-top:24px;line-height:1.6}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:54px}
+.service-card{
+  min-height:420px;border-radius:30px;background:var(--panel);padding:34px;
+  display:flex;flex-direction:column;justify-content:space-between;border:1px solid rgba(255,255,255,.04)
+}
+.service-card h3{font-size:34px;line-height:1.05;margin:0;letter-spacing:-.045em}
+.service-card p{color:#8e8e93;font-size:17px;line-height:1.55}
+.service-icon{font-size:56px;filter:drop-shadow(0 0 18px rgba(100,210,255,.25))}
+.issue-panel{
+  background:var(--panel);border-radius:34px;padding:64px 54px;margin-top:48px;
+  border:1px solid rgba(255,255,255,.04)
+}
+.issue-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:34px}
+.issue{
+  background:#050505;border-radius:24px;padding:28px 26px;min-height:180px;
+  display:flex;flex-direction:column;justify-content:space-between
+}
+.issue b{font-size:26px;line-height:1.15}
+.issue span{color:#8e8e93;font-size:15px}
+.big-statement{text-align:center;padding:150px 0}
+.big-statement .kicker{font-size:20px;font-weight:800}
+.big-statement h2{
+  font-size:clamp(48px,7vw,96px);line-height:1.02;letter-spacing:-.065em;margin:18px auto 30px;
+  max-width:1000px
+}
+.big-statement p{max-width:820px;margin:auto;color:#8e8e93;font-size:21px;line-height:1.6}
+.regions{display:flex;flex-wrap:wrap;gap:12px;margin-top:42px}
+.region{padding:13px 18px;border-radius:999px;background:#1c1c1e;color:#f5f5f7;border:1px solid #2c2c2e;font-weight:700}
+.cta-box{
+  border-radius:36px;padding:70px 58px;
+  background:
+    radial-gradient(circle at 80% 30%,rgba(10,132,255,.28),transparent 28%),
+    linear-gradient(145deg,#151517,#0b0b0c);
+  border:1px solid rgba(255,255,255,.06)
+}
+.cta-box h2{font-size:clamp(42px,6vw,76px);line-height:1.02;margin:0 0 20px;letter-spacing:-.06em}
+.cta-box p{color:#9a9aa0;font-size:18px;max-width:700px}
+.phone{font-size:clamp(28px,4vw,48px);font-weight:900;margin-top:26px}
+footer{padding:40px 0 110px;color:#6e6e73;font-size:13px}
+.sticky-call{
+  display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:60;height:58px;
+  background:var(--blue);color:#fff;border-radius:999px;align-items:center;justify-content:center;font-weight:900;
+  box-shadow:0 12px 34px rgba(0,0,0,.45)
+}
+@media(max-width:900px){
+  .navlinks{display:none}
+  .service-grid{grid-template-columns:1fr}
+  .issue-grid{grid-template-columns:1fr}
+  .hero{min-height:auto}
+}
+@media(max-width:600px){
+  .wrap{width:min(100% - 28px,1180px)}
+  .hero{padding:56px 0 40px}
+  .hero h1{font-size:52px}
+  .hero-copy{font-size:17px}
+  .hero-visual{height:320px;border-radius:26px}
+  section{padding:78px 0}
+  .service-card{min-height:320px;padding:28px}
+  .issue-panel{padding:32px 20px;border-radius:28px}
+  .big-statement{padding:100px 0}
+  .cta-box{padding:44px 26px;border-radius:28px}
+  .sticky-call{display:flex}
+}
 </style>
 </head>
 <body>
-<header><div class="wrap"><nav>
-<a class="brand" href="#top">폭풍<span>전기</span></a>
-<div class="links"><a href="#services">수리 항목</a><a href="#areas">출동 지역</a><a href="#process">진행 방식</a><a href="#faq">FAQ</a></div>
-<a class="call" href="tel:01058558253">전화 문의</a>
-</nav></div></header>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand">폭풍전기</a>
+    <div class="navlinks">
+      <a href="#main">주요 서비스</a>
+      <a href="#issues">전기고장</a>
+      <a href="#areas">출동지역</a>
+    </div>
+    <a href="tel:01058558253" class="nav-cta">전화 문의</a>
+  </div>
+</nav>
+
+<div class="promo">전기수리 · 누전점검 · 차단기 문제 · 콘센트교체 · 스위치 · LED조명</div>
 
 <main id="top">
-<section class="hero"><div class="wrap">
-<div class="badge">생활 전기 문제 빠른 점검</div>
-<h1>차단기가 자꾸 내려가고<br><em>콘센트가 갑자기 죽었다면</em></h1>
-<p>차단기 내려감, 누전·합선, 콘센트 고장, 조명 불량처럼 갑자기 생긴 생활 전기 문제를 증상부터 차근차근 점검합니다.</p>
-<div class="actions"><a class="btn primary" href="tel:01058558253">☎ 010-5855-8253</a><a class="btn" href="#services">수리 항목 보기</a></div>
-</div></section>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">폭풍전기</div>
+      <h1>전기가 멈췄다면,<br><span class="gradient-text">원인부터 찾습니다.</span></h1>
+      <p class="hero-copy">차단기 내려감, 누전, 콘센트 고장, 스위치 불량, LED조명 문제까지. 생활 속 전기 문제를 증상부터 점검하고 필요한 수리 범위를 안내합니다.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="tel:01058558253">010-5855-8253</a>
+        <a class="btn dark" href="#main">서비스 보기</a>
+      </div>
+    </div>
 
-<section id="services"><div class="wrap">
-<div class="head"><h2>자주 문의되는 전기 문제</h2><p>증상만 말씀해주셔도 됩니다. 원인을 단정하기보다 현장에서 상태를 점검한 뒤 안내합니다.</p></div>
-<div class="grid">
-<div class="card"><h3>⚡ 차단기 내려감</h3><p>과부하, 누전, 합선, 차단기 이상 등 가능성을 나눠 점검합니다.</p></div>
-<div class="card"><h3>🔌 콘센트 고장</h3><p>전원 공급 불량, 접촉 불량, 배선 이상, 탄 흔적 등을 확인합니다.</p></div>
-<div class="card"><h3>💡 조명 불량</h3><p>LED 조명, 스위치, 전원 공급 상태를 함께 확인합니다.</p></div>
-<div class="card"><h3>🧯 타는 냄새·발열</h3><p>플러그, 멀티탭, 콘센트, 단자부의 과열과 변색 여부를 확인합니다.</p></div>
-<div class="card"><h3>🌧️ 누전 의심</h3><p>습기, 누수, 기기 이상, 배선 문제 등 원인을 구분해 점검합니다.</p></div>
-<div class="card"><h3>🛠️ 기타 전기 고장</h3><p>방 일부 정전, 스위치 불량, 배선 문제 등도 상담 가능합니다.</p></div>
-</div></div></section>
+    <div class="hero-visual" aria-label="전기 아크를 형상화한 폭풍전기 비주얼">
+      <div class="arc"></div>
+      <div class="visual-label"><small>생활 전기 문제 빠른 점검</small>POWER. CHECKED.</div>
+    </div>
+  </div>
+</section>
 
-<section id="areas"><div class="wrap">
-<div class="head"><h2>주요 출동 지역</h2><p>아래 지역 외에도 일정과 거리에 따라 상담 가능합니다.</p></div>
-<div class="areas">
-<span class="pill">인천 부평</span><span class="pill">인천 청라</span><span class="pill">부천 중동·상동</span>
-<span class="pill">서울 노원</span><span class="pill">서울 도봉</span><span class="pill">서울 강북</span>
-<span class="pill">서울 중랑</span><span class="pill">서울 광진</span><span class="pill">서울 동대문</span>
-</div></div></section>
+<section id="main">
+  <div class="wrap">
+    <h2 class="section-title">필요한 작업만.<br><span class="gradient-text">깔끔하게.</span></h2>
+    <p class="section-sub">주택·상가에서 자주 발생하는 생활 전기 문제를 중심으로 점검합니다. 내부배선 전기공사는 220V 기준 경미한 작업 범위에서 상담합니다.</p>
 
-<section id="process"><div class="wrap">
-<div class="head"><h2>문의부터 수리까지</h2><p>현재 보이는 증상만 알려주셔도 상담이 가능합니다.</p></div>
-<div class="steps">
-<div class="card step"><b>1</b><h3>증상 상담</h3><p>차단기, 콘센트, 조명 등 현재 증상을 말씀해주세요.</p></div>
-<div class="card step"><b>2</b><h3>출동 안내</h3><p>지역과 일정 확인 후 방문 가능 시간을 안내합니다.</p></div>
-<div class="card step"><b>3</b><h3>원인 점검</h3><p>문제가 생긴 회로와 부품 상태를 점검합니다.</p></div>
-<div class="card step"><b>4</b><h3>수리 진행</h3><p>필요한 작업 범위와 비용을 안내한 뒤 진행합니다.</p></div>
-</div></div></section>
+    <div class="service-grid">
+      <article class="service-card">
+        <div class="service-icon">⚡</div>
+        <div>
+          <h3>전기수리</h3>
+          <p>차단기, 누전, 일부 정전, 스위치, 조명 등 생활 전기 문제를 원인부터 점검합니다.</p>
+        </div>
+      </article>
 
-<section id="faq"><div class="wrap faq">
-<div class="head"><h2>자주 묻는 질문</h2></div>
-<details><summary>차단기가 안 올라가는데 계속 올려봐도 되나요?</summary><p>반복해서 바로 떨어지거나 타는 냄새·열·스파크가 있었다면 계속 올리지 않는 편이 좋습니다. 원인 점검이 먼저입니다.</p></details>
-<details><summary>콘센트 하나만 안 되면 콘센트만 교체하면 되나요?</summary><p>콘센트 자체 불량일 수도 있지만 배선, 연결 단자, 해당 회로의 전원 공급 문제일 수도 있어 확인이 필요합니다.</p></details>
-<details><summary>사진을 보내면 상담 가능한가요?</summary><p>분전함, 차단기, 콘센트의 변색이나 손상 사진이 있으면 상담에 도움이 됩니다.</p></details>
-</div></section>
+      <article class="service-card">
+        <div class="service-icon">🔌</div>
+        <div>
+          <h3>콘센트교체</h3>
+          <p>헐거움, 발열, 변색, 전원 불량 등 콘센트 이상을 점검하고 필요한 경우 교체합니다.</p>
+        </div>
+      </article>
 
-<section><div class="wrap"><div class="cta">
-<h2>지금 전기가 이상하다면<br>증상부터 알려주세요.</h2>
-<p>“거실만 전기가 안 들어와요”, “특정 가전을 켜면 차단기가 내려가요”처럼 편하게 말씀하시면 됩니다.</p>
-<a class="btn primary" href="tel:01058558253">☎ 010-5855-8253</a>
-</div></div></section>
+      <article class="service-card">
+        <div class="service-icon">🛠️</div>
+        <div>
+          <h3>내부배선<br>전기공사</h3>
+          <p>220V 기준 경미한 내부 배선 작업과 전원 공급 관련 작업을 현장 상태에 맞춰 상담합니다.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="issues">
+  <div class="wrap">
+    <h2 class="section-title">이런 증상,<br>그냥 넘기지 마세요.</h2>
+    <div class="issue-panel">
+      <div class="issue-grid">
+        <div class="issue"><b>차단기 내려감</b><span>같은 차단기가 반복해서 내려가면 원인 구분이 먼저입니다.</span></div>
+        <div class="issue"><b>차단기 떨어짐</b><span>과부하·누전·합선·제품 이상·차단기 이상 등 가능성을 나눠 점검합니다.</span></div>
+        <div class="issue"><b>차단기 안 올라감</b><span>무리하게 반복 투입하기보다 회로와 연결 기기 상태를 확인해야 합니다.</span></div>
+        <div class="issue"><b>누전점검</b><span>누수·습기·배선·기기 문제 등 누전 원인을 구분해 점검합니다.</span></div>
+        <div class="issue"><b>스위치</b><span>작동 불량, 접촉 이상, 스위치 내부 손상 여부를 확인합니다.</span></div>
+        <div class="issue"><b>LED조명</b><span>조명 자체 문제인지 스위치·배선·전원 공급 문제인지 함께 확인합니다.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="big-statement">
+  <div class="wrap">
+    <div class="kicker">전기수리</div>
+    <h2><span class="gradient-text">빠르게보다,<br>원인을 정확하게.</span></h2>
+    <p>전기가 끊겼다고 무조건 차단기를 바꾸거나 콘센트를 교체하는 것이 답은 아닙니다. 현장 상태를 확인하고 필요한 작업 범위를 구분하는 것이 먼저입니다.</p>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="wrap">
+    <h2 class="section-title">출동 가능 지역.</h2>
+    <p class="section-sub">일정과 이동 거리에 따라 방문 가능 여부를 안내합니다.</p>
+    <div class="regions">
+      <span class="region">서울</span>
+      <span class="region">인천</span>
+      <span class="region">부천</span>
+      <span class="region">시흥</span>
+      <span class="region">광명</span>
+      <span class="region">김포</span>
+      <span class="region">일산</span>
+      <span class="region">의정부</span>
+      <span class="region">동두천</span>
+      <span class="region">양주</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>전기가 이상하다면,<br>증상부터 알려주세요.</h2>
+      <p>“특정 가전을 켜면 차단기가 내려가요”, “콘센트 하나만 전기가 안 들어와요”처럼 현재 증상을 편하게 말씀해 주세요.</p>
+      <div class="phone">010-5855-8253</div>
+      <div class="hero-actions">
+        <a class="btn primary" href="tel:01058558253">전화 문의</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer><div class="wrap"><b>폭풍전기</b><br>차단기 · 콘센트 · 조명 · 누전 · 생활 전기수리<br>© 2026 폭풍전기</div></footer>
-<a class="sticky" href="tel:01058558253">☎ 010-5855-8253</a>
+<footer>
+  <div class="wrap">
+    <strong>폭풍전기</strong><br>
+    전기수리 · 콘센트교체 · 누전점검 · 차단기 문제 · 스위치 · LED조명 · 220V 기준 경미한 내부배선 작업<br><br>
+    © 2026 폭풍전기
+  </div>
+</footer>
+
+<a class="sticky-call" href="tel:01058558253">☎ 010-5855-8253</a>
 </body>
 </html>
